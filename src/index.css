@@ -5,6 +5,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow: hidden; /* Hide scrollbars */
 }
 
 code {
@@ -14,5 +15,6 @@ code {
 
 
 html,body,#root{
-    height: 90vh!important;
+    height: calc(var(--vh, 1vh) * 90);
+
 }

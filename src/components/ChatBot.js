@@ -91,8 +91,6 @@ class ChatBot extends React.Component {
 
     render() {
         const botConnection = createDirectLine({ token: this.state.token });
-
-
         return [
             <Header />,
             <ReactWebChat directLine={botConnection} styleOptions={this.state.styleOptions} />
