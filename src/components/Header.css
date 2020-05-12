@@ -1,0 +1,53 @@
+header {
+	width:100%; /* Establecemos que el header abarque el 100% del documento */
+	overflow:hidden; /* Eliminamos errores de float */
+    background:black;
+    height: 8vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-bottom: 1vh;
+    padding-top: 1vh;
+    min-height: 50px;
+}
+
+header .logo{
+color:#ffdc20;
+	font-size:40px;
+	line-height:200px;
+}
+ 
+header nav {
+    line-height:20px;
+}
+ 
+header nav a {
+	display:inline-block;
+	color:#fff;
+	text-decoration:none;
+	padding:10px 20px;
+	line-height:normal;
+	font-size:15px;
+	font-weight:bold;
+	-webkit-transition:all 500ms ease;
+	-o-transition:all 500ms ease;
+    transition:all 500ms ease;
+    background-color: red;
+}
+ 
+header nav a:hover {
+	background:#ffdc20;
+    border-radius:10px;
+    color:black;
+}
+
+@media screen and (max-width: 950px) {
+	header .logo,
+	header nav {
+		width:100%;
+		text-align:center; /*Centramos el menu y el logotipo*/
+		line-height:100px;
+	}
+}
+
+

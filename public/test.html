@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Asistente virtual Elektra</title>
+</head>
+
+<body>
+    <button onclick="createPopupWin('/', 
+            'Asistente Virtual Elektra', 450, 650);">Abrir Elektra BOT</button>
+    <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+
+    <script>
+        function createPopupWin(pageURL, pageTitle,
+            popupWinWidth, popupWinHeight) {
+            var left = (screen.width - popupWinWidth) / 2;
+            var top = (screen.height - popupWinHeight) / 4;
+
+            var myWindow = window.open(pageURL, pageTitle,
+                'resizable=yes, width=' + popupWinWidth
+                + ', height=' + popupWinHeight + ', top='
+                + top + ', left=' + left);
+        } 
+    </script>
+</body>
+
+</html>
