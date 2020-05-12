@@ -57,12 +57,12 @@ class ChatBot extends React.Component {
 
 
     async fetchToken() {
-        console.log('process.env.PUBLIC_URL :>> ', process.env.REACT_APP_PUBLIC_URL + '/elektra.svg');
+        console.log('process.env.PUBLIC_URL :>> ', process.env);
 
         const res = await fetch("https://directline.botframework.com/v3/directline/tokens/generate/",
             {
                 method: 'POST', headers: new Headers({
-                    'Authorization': 'Bearer  WlwlAP-HCNw.vpyrNjGsJQ777nXNzMNzyIsf3OmdzHlkaYBn5DSI7jI',
+                    'Authorization': 'Bearer  ' + process.env.REACT_APP_SECRET,
                     'Content-Type': 'application/x-www-form-urlencoded'
                 }),
             });
@@ -91,7 +91,7 @@ class ChatBot extends React.Component {
 
     render() {
         const botConnection = createDirectLine({ token: this.state.token });
-        
+
 
         return [
             <Header />,
