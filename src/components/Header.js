@@ -23,10 +23,10 @@ class Header extends React.Component {
 
                     <nav>
                         <div onClick={this.handleClick}>
-                            <a href="#">
+                            <span>
 
                                 Finalizar Chat
-                            </a>
+                            </span>
                         </div>
                     </nav>
                 </header>

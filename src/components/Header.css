@@ -21,7 +21,7 @@ header nav {
     line-height:20px;
 }
  
-header nav a {
+header nav div {
 	display:inline-block;
 	color:#fff;
 	text-decoration:none;
@@ -32,10 +32,11 @@ header nav a {
 	-webkit-transition:all 500ms ease;
 	-o-transition:all 500ms ease;
     transition:all 500ms ease;
-    background-color: red;
+	background-color: red;
+	cursor:pointer
 }
  
-header nav a:hover {
+header nav div:hover {
 	background:#ffdc20;
     border-radius:10px;
     color:black;
